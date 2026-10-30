@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <title>إبداع — IBDAA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="window">
+  <header class="titlebar">
+    <div class="window-brand">
+      <img src="../assets/logo.svg" alt="إبداع">
+      <div><strong>إبداع</strong><small>IBDAA CREATIVE SUITE</small></div>
+    </div>
+    <div class="window-caption">منصة إبداع الإبداعية</div>
+    <div class="window-controls">
+      <button class="window-control minimize" data-window="minimize" aria-label="تصغير"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button>
+      <button class="window-control maximize" data-window="toggle-maximize" aria-label="تكبير"><svg viewBox="0 0 16 16"><rect x="3.2" y="3.2" width="9.6" height="9.6" rx=".8"/></svg></button>
+      <button class="window-control close" data-window="close" aria-label="إغلاق"><svg viewBox="0 0 16 16"><path d="m4 4 8 8M12 4l-8 8"/></svg></button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-emblem"><img src="../assets/logo.svg" alt=""></div>
+        <div class="brand-type"><div class="brand-ar">إبداع</div><div class="brand-en">I B D A A</div></div>
+        <p>أدواتك، إبداعك، بلا حدود.</p>
+      </div>
+
+      <div class="nav-label">مساحة العمل</div>
+      <nav class="navigation">
+        <button class="nav-item active" data-page="home"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg></span><span>الرئيسية</span><kbd>01</kbd></button>
+        <button class="nav-item" data-page="library"><span class="nav-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><span>مكتبة البرامج</span><kbd>02</kbd></button>
+        <button class="nav-item" data-page="updates"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9a7 7 0 0 1 12-2L20 12M4 12l2.4 5a7 7 0 0 0 12-2"/></svg></span><span>التحديثات</span><kbd>03</kbd><i class="nav-indicator"></i></button>
+        <button class="nav-item" data-page="sources"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 8v8m-4-4h8"/><circle cx="12" cy="12" r="9"/><path d="M3.5 8h17M3.5 16h17"/></svg></span><span>مصادر البرامج</span><kbd>04</kbd></button>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+      <div class="nav-label">معلومات</div>
+      <div class="sidebar-feature">
+        <div class="feature-glyph"><svg viewBox="0 0 24 24"><path d="M12 3 3.5 7.5v9L12 21l8.5-4.5v-9L12 3Z"/><path d="m8 12 2.5 2.5L16.5 8"/></svg></div>
+        <div><b>مصادر موثوقة</b><small>التنزيل من GitHub Releases</small></div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="online-state"><i></i><span>المشغّل جاهز</span></div>
+        <div class="version-line">IBDAA LAUNCHER <span>1.5.0</span></div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-top">
+        <div class="breadcrumbs"><span>إبداع</span><b>/</b><span id="breadcrumbCurrent">الرئيسية</span></div>
+        <div class="top-tools">
+          <label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="searchInput" type="search" placeholder="ابحث عن برنامج..." autocomplete="off"></label>
+          <button class="round-tool" id="reloadButton" title="تحديث المكتبة"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9a7 7 0 0 1 12-2L20 12M4 12l2.4 5a7 7 0 0 0 12-2"/></svg></button>
+          <div class="profile-chip"><div class="profile-avatar">إ</div><div><b>مستخدم إبداع</b><small>مساحة شخصية</small></div><svg viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></div>
+        </div>
+      </div>
+
+      <section id="homePage" class="page">
+        <section class="welcome-banner">
+          <div class="banner-photo"></div><div class="banner-shade"></div>
+          <div class="welcome-content">
+            <div class="welcome-kicker"><i></i> IBDAA CREATIVE ECOSYSTEM</div>
+            <h1>مساحة واحدة.<br><span>إمكانيات بلا حدود.</span></h1>
+            <p>اكتشف أدواتك الإبداعية، نزّل إصداراتها، واحتفظ بكل مشاريعك المفضلة في مكان واحد.</p>
+            <button class="banner-button" id="browseButton">استكشف مكتبة البرامج <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+          </div>
+          <div class="banner-signature"><img src="../assets/logo.svg" alt=""><span>إبداع</span><small>CREATE WITHOUT LIMITS</small></div>
+          <div class="banner-index">01 <span>/</span> 04</div>
+        </section>
+
+        <div class="section-header">
+          <div><span class="section-overline">YOUR CREATIVE WORKSPACE</span><h2>برامجك الإبداعية</h2><p>كل الأدوات التي تحتاجها، منظمة في مكتبة واحدة.</p></div>
+          <button class="text-action" data-goto="library">عرض المكتبة كاملة <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        </div>
+        <div id="homeGrid" class="app-grid"></div>
+        <div class="bottom-strip">
+          <div class="strip-mark">✦</div><div class="strip-copy"><b>إبداع يتطور باستمرار</b><span>أضف مستودعات GitHub الخاصة بك من ملف catalog.js لتظهر برامجك هنا.</span></div>
+          <button class="strip-button" data-goto="sources">إعداد المصادر <span>←</span></button>
+        </div>
+      </section>
+
+      <section id="libraryPage" class="page hidden">
+        <div class="page-heading"><div><span class="section-overline">THE COLLECTION</span><h1>مكتبة البرامج</h1><p>تصفح أدوات إبداع واربطها بإصدارات GitHub الخاصة بها.</p></div><div class="library-total"><b id="libraryCount">08</b><span>برامج في المكتبة</span></div></div>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip selected" data-filter="الكل">الكل</button>
+          <button class="filter-chip" data-filter="الصور">الصور</button>
+          <button class="filter-chip" data-filter="الرسم">الرسم</button>
+          <button class="filter-chip" data-filter="الفيديو">الفيديو</button>
+          <button class="filter-chip" data-filter="الحركة">الحركة</button>
+          <button class="filter-chip" data-filter="النشر">النشر</button>
+          <button class="filter-chip" data-filter="الصوت">الصوت</button>
+          <button class="filter-chip" data-filter="المستندات">المستندات</button>
+        </div>
+        <div id="libraryGrid" class="app-grid"></div>
+      </section>
+
+      <section id="updatesPage" class="page hidden">
+        <div class="page-heading"><div><span class="section-overline">RELEASE MONITOR</span><h1>مركز التحديثات</h1><p>تابع أحدث الإصدارات المنشورة في مستودعاتك.</p></div><button class="primary-action" id="checkUpdates">التحقق من التحديثات <svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9a7 7 0 0 1 12-2L20 12M4 12l2.4 5a7 7 0 0 0 12-2"/></svg></button></div>
+        <div class="updates-summary"><div><span>المستودعات المرتبطة</span><b id="linkedCount">0</b></div><div><span>آخر عملية تحقق</span><b id="lastCheck">لم يتم التحقق بعد</b></div><div><span>مصدر الإصدارات</span><b>GitHub Releases</b></div></div>
+        <div id="updatesList" class="release-list"><div class="empty-state">اضغط على «التحقق من التحديثات» لقراءة أحدث الإصدارات.</div></div>
+      </section>
+
+      <section id="sourcesPage" class="page hidden">
+        <div class="page-heading"><div><span class="section-overline">SOURCE CONFIGURATION</span><h1>مصادر البرامج</h1><p>روابط المستودعات ثابتة داخل المشروع لتتحكم فيها مباشرة من الكود.</p></div><div class="code-badge">src / catalog.js</div></div>
+        <div class="source-guide"><div class="guide-icon"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/></svg></div><div><b>أضف روابطك داخل catalog.js</b><p>افتح الملف وعدّل قيمة <code>repo</code> لكل برنامج. اكتب <code>owner/repo</code> أو رابط GitHub كاملًا، ثم أعد تشغيل المشغّل.</p></div></div>
+        <div id="sourceList" class="source-list"></div>
+        <div class="source-warning"><b>ملاحظة تقنية</b><span>المشغّل يعرض الملفات المرفقة بإصدارات GitHub Releases المنشورة. المستودع الذي لا يملك إصدارًا منشورًا لن يعرض ملف تنزيل تلقائيًا.</span></div>
+      </section>
+
+      <footer class="app-footer"><span>إبداع <b>·</b> أدواتك، إبداعك، بلا حدود.</span><span>تحميل الإصدارات من GitHub <i></i> واجهة عربية أصلية</span></footer>
+    </main>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modal-backdrop" data-close-modal></div><section class="modal-panel"><button class="modal-close" data-close-modal aria-label="إغلاق">×</button><div id="modalContent"></div></section></div>
+<script src="renderer.js"></script>
+</body>
+</html>
